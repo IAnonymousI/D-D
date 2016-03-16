@@ -1,11 +1,13 @@
 #include <iostream>
 
 #include "Loop.h"
+#include "Reader.h"
 
 // Initiation
 Loop::Loop()
 {
 	_gameState = GameState::PLAY;
+	_reader.receive(&_gameState);
 }
 
 Loop::~Loop()
@@ -20,9 +22,12 @@ void Loop::run(){
 	// Console Loop
 	while (_gameState == GameState::PLAY){
 
-		// TEST /////////////////////
-		_gameState = GameState::EXIT;
-		/////////////////////////////
+		// User input
+		std::cout << "> ";
+		std::cin >> _response;
+
+		// Analyzes user input
+		_reader.analyze(_response);
 
 	}
 

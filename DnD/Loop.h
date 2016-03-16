@@ -2,9 +2,8 @@
 
 #include <string>
 
-enum class GameState{
-	PLAY, EXIT
-};
+#include "GameState.h"
+#include "Reader.h"
 
 class Loop
 {
@@ -22,6 +21,7 @@ private:
 	// Variables
 	GameState _gameState;
 	std::string _response;
+	Reader _reader;
 
 };
 
