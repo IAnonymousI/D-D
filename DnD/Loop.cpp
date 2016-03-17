@@ -6,8 +6,8 @@
 // Initiation
 Loop::Loop()
 {
-	_gameState = GameState::PLAY;
-	_reader.receive(&_gameState);
+	_loopState = LoopState::PLAY;
+	_reader.receive(&_loopState);
 }
 
 Loop::~Loop()
@@ -20,7 +20,7 @@ void Loop::run(){
 	std::cout << "D&D Program\n";
 
 	// Console Loop
-	while (_gameState == GameState::PLAY){
+	while (_loopState == LoopState::PLAY){
 
 		// User input
 		std::cout << "> ";

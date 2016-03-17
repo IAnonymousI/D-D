@@ -2,7 +2,7 @@
 
 #include <string>
 
-#include "GameState.h"
+#include "LoopState.h"
 #include "Reader.h"
 
 class Loop
@@ -19,7 +19,7 @@ public:
 private:
 
 	// Variables
-	GameState _gameState;
+	LoopState _loopState;
 	std::string _response;
 	Reader _reader;
 

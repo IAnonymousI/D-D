@@ -64,11 +64,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="GameState.h" />
+    <ClInclude Include="Character.h" />
+    <ClInclude Include="D20.h" />
+    <ClInclude Include="D6.h" />
+    <ClInclude Include="LoopState.h" />
     <ClInclude Include="Loop.h" />
     <ClInclude Include="Reader.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Character.cpp" />
+    <ClCompile Include="D20.cpp" />
+    <ClCompile Include="D6.cpp" />
     <ClCompile Include="Loop.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Reader.cpp" />

@@ -2,7 +2,7 @@
 
 #include <string>
 
-#include "GameState.h"
+#include "LoopState.h"
 
 class Reader
 {
@@ -13,15 +13,15 @@ public:
 	// Analyzes user input
 	void analyze(std::string r);
 
-	// Receives _gameState from Loop
-	void receive(GameState* pGameState);
+	// Receives _LoopState from Loop
+	void receive(LoopState* pLoopState);
 
 private:
 
 	// User Input
 	std::string _response;
 
-	// Pointer to _gameState
-	GameState* _pGameState;
+	// Pointer to _LoopState
+	LoopState* _pLoopState;
 
 };
